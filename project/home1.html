@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        list-style: none;
+      }
+      .continer {
+        grid-template-rows: 100px 600px;
+        grid-template-areas:
+          "sidebar navbar "
+          "sidebar section";
+        /* width: 100vw;
+        height: 100vh;
+        border: 2px solid red;
+        box-sizing: border-box; */
+      }
+      .item {
+        background-color: aqua;
+        /* border: 2px solid black; */
+        /* margin: 10px 12px;
+        padding: 10px 12px; */
+      }
+      #sidebar {
+        float: left;
+        width: 7.79vw;
+        height: 100%;
+        background-color: rgb(219, 168, 208);
+        position: absolute;
+        /* clear: both; */
+      }
+      #navbar {
+        float: right;
+        width: 92.2vw;
+        background-color: rgb(223, 198, 174);
+        justify-content: center;
+      }
+      #section {
+        display: block;
+        float: right;
+        width: 92.2vw;
+        height: 97vh;
+        /* flex-wrap: wrap; */
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="continer">
+      <div id="navbar" class="item">
+        home about contact us
+      </div>
+      <div id="sidebar" class="item">
+        blog content
+      </div>
+      <div id="section" class="item"></div>
+    </div>
+  </body>
+</html>
